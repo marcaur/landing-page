@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>GitHub Portfolio</title>
+
+    <style>
+      body {
+        background-color: black;
+        overflow-x: hidden;
+      }
+      .jumbotron {
+        background-image: url(laptop.jpg);
+        background-size: cover;
+        color: white;
+        height: 27vw;
+        opacity: 0.7;
+      }
+
+      #photo {
+        height: 40vw;
+        object-fit: cover;
+        opacity: 0.4;
+      }
+
+      .row {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 2.8em;
+        font-family: "Roboto Mono", monospace;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      #col {
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-header,
+      .card-body {
+        color: black;
+        text-align: center;
+      }
+
+      svg,
+      img {
+        height: 2em;
+        width: 2em;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/2ff1670733.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="card bg-dark text-white">
+        <img src="laptop.jpg" id="photo" class="card-img" alt="..." />
+        <div class="card-img-overlay">
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+              <h1 class="text-center">Hello, my name is Elliott.</h1>
+              <p
+                class="text-center"
+                style="font-family: 'Roboto Mono', monospace;"
+              >
+                Welcome to my site. I am a jr. front-end web developer. Here you
+                will find projects that I have designed myself and links to my
+                work on GitHub.
+              </p>
+            </div>
+            <div class="col-sm-3"></div>
+          </div>
+          <br />
+          <br />
+          <!--end of 1st row-->
+          <div class="row">
+            <div class="col-sm-4 d-flex">
+              <div class="card flex-fill">
+                <h5 class="card-header">
+                  Link To GitHub
+                  <img src="gitlogo.jpg" alt="" />
+                </h5>
+                <div class="card-body">
+                  <h5 class="card-title">Source Code and Projects</h5>
+                  <p class="card-text">
+                    Click below to view my GitHub profile with source code files
+                    and other repos
+                  </p>
+                  <a
+                    href="https://github.com/marcaur"
+                    target="_blank"
+                    class="btn btn-outline-primary"
+                    >Go to github.com/marcaur</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--end of first column-->
+            <div class="col-sm-4 d-flex">
+              <div class="card flex-fill">
+                <h5 class="card-header">
+                  WordPress Blog
+                  <svg
+                    class="bi bi-pencil"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"
+                    />
+                  </svg>
+                </h5>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">
+                    Clicking on the button below will bring you to my WordPress
+                    site hosted on AWS
+                  </p>
+                  <a
+                    href="https://greatgreymatter.com/"
+                    class="btn btn-outline-primary"
+                    >Go to Great Grey Matter</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!--end of second column-->
+            <div class="col-sm-4 d-flex">
+              <div class="card flex-fill">
+                <h5 class="card-header">
+                  Live Code Links
+                  <svg
+                    class="bi bi-file-code"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
+                    />
+                  </svg>
+                </h5>
+                <div class="card-body">
+                  <h5 class="card-title">Links To Live Code</h5>
+                  <p class="card-text">
+                    <a
+                      href="https://marcaur.github.io/googlehome_replica/"
+                      target="_blank"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      GOOGLE HOMEPAGE REPLICA
+                    </a>
+                    <a
+                      href="https://marcaur.github.io/ye_page-unofficial-/"
+                      target="_blank"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      UNOFFICIAL KANYE FAN PAGE
+                    </a>
+                    <a
+                      href="https://marcaur.github.io/login_page/"
+                      target="_blank"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      MATRIX LOG IN PORTAL
+                    </a>
+                    <a
+                      href="https://marcaur.github.io/customer_info_form/"
+                      target="_blank"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      CUSTOMER REGISTRATION
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end of third column-->
+          </div>
+          <!--end of second row-->
+        </div>
+      </div>
+      <!--end of pic-->
+    </div>
+    <!--end of body container-->
+
+    <!-- <div class="container">
+            MAIN SECTION
+            <h1 class=" text-center">My Projects</h1>
+            <br>
+            <div class="container">
+              <div class="card-deck">
+                
+                <div class="col-mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <svg class="bi bi-file-code card-img-top img-thumbnail" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4 1h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V3a2 2 0 012-2zm0 1a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V3a1 1 0 00-1-1H4z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 01.708 0l2 2a.5.5 0 010 .708l-2 2a.5.5 0 01-.708-.708L10.293 8 8.646 6.354a.5.5 0 010-.708zm-1.292 0a.5.5 0 00-.708 0l-2 2a.5.5 0 000 .708l2 2a.5.5 0 00.708-.708L5.707 8l1.647-1.646a.5.5 0 000-.708z" clip-rule="evenodd"/>
+                      </svg>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="wordpress.png" class="card-img-top img-fluid img-thumbnail" alt="insert wordpress logo">
+                        <div class="card-body">
+                          <h5 class="card-title">Example Form</h5>
+                          <p class="card-text">Form template for collecting data, booking appointments and much more</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <svg class="bi bi-cloud card-img-top img-thumbnail" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.887 7.2l-.964-.165A2.5 2.5 0 103.5 12h10a1.5 1.5 0 00.237-2.981L12.7 8.854l.216-1.028a4 4 0 10-7.843-1.587l-.185.96zm9.084.341a5 5 0 00-9.88-1.492A3.5 3.5 0 103.5 13h9.999a2.5 2.5 0 00.394-4.968c.033-.16.06-.324.077-.49z" clip-rule="evenodd"/>
+                      </svg>
+                        <div class="card-body">
+                          <h5 class="card-title">Sample Sites</h5>
+                          <p class="card-text">These are replica sites that I created, such as the Google home page and more.</p>
+                          <a href="#" class="btn btn-primary">Github Repo</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div> END OF FIRST MAIN SECTION ROW
+            </div>
+        
+    </div> End of outside container-->
+  </body>
+</html>
