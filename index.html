@@ -9,8 +9,8 @@
 
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
 
@@ -22,6 +22,8 @@
     <title>GitHub Portfolio</title>
 
     <style>
+
+
       body {
         background-color: black;
         overflow-x: hidden;
@@ -35,7 +37,7 @@
       }
 
       #photo {
-        height: 40vw;
+        height: 20vw;
         object-fit: cover;
         opacity: 0.4;
       }
@@ -43,6 +45,15 @@
       .row {
         justify-content: center;
       }
+
+
+
+      .page-header {
+        border:3px solid white;
+        background-color: black;
+      }
+
+
 
       h1 {
         font-size: 2.8em;
@@ -77,27 +88,179 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="card bg-dark text-white">
-        <img src="laptop.jpg" id="photo" class="card-img" alt="..." />
-        <div class="card-img-overlay">
-          <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-              <h1 class="text-center">Hello, my name is Elliott.</h1>
-              <p
-                class="text-center"
-                style="font-family: 'Roboto Mono', monospace;"
-              >
-                Welcome to my site. I am a jr. front-end web developer. Here you
-                will find projects that I have designed myself and links to my
-                work on GitHub.
-              </p>
+        <div class="row page-header">
+        <!--<img src="laptop.jpg" id="photo" class="card-img" alt="..." /> -->
+            <div class="col">
+              <h1>Elliott</h1>
+              <p>Web Developer</p>
             </div>
-            <div class="col-sm-3"></div>
+
+            <div class="col-sm" >
+
+              <!--<img src="deathstar.jpg" class="img-responsive"style="width:50%;height:auto; float:right;"> -->
+            </div>
           </div>
-          <br />
-          <br />
-          <!--end of 1st row-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <main>
+      <div class="container" style="border: 1px solid;">
+        <div class="row">
+          <div class="col">
+            <h1>About Me</h1>
+            <div class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Media object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+                <img src=" " class="ml-3" alt="...">
+            </div>
+          </div>
+
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img src="jslogo.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                        in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  </div>
+              </li>
+              <li class="media">
+                <img src="" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                        in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                  </div>
+              </li>
+              <li class="media">
+                <img src="gitlogo.jpg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">List-based media object</h5>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+        </div> <!--end of first row -->
+        <br>
+      <!--  <div class="row">
+          <div class="col-8">
+            <h1>Portfolio</h1>
+            <div class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Media object</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+                <img src="..." class="ml-3" alt="...">
+            </div>
+          </div>
+          <div class="col-4">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0 mb-1">List-based media object</h5>
+                  <a
+                    href="https://marcaur.github.io/googlehome_replica/"
+                    target="_blank"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    GOOGLE HOMEPAGE REPLICA
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> end of second row -->
+
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-6">
+            <h1>Contact Me</h1>
+            <div class="media">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1"></h5>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Enter Your Email and I Will Contact You Shortly</small>
+                  </div>
+              </div>
+                <img src="..." class="ml-3" alt="...">
+            </div>
+          </div>
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h1 class="mt-0 mb-1">My Projects</h1>
+                  <!--<div class="card-body"> -->
+                    <!--<h5 class="card-title">Links To Live Code</h5>-->
+                    <p class="card-text">
+                      <a
+                        href="https://marcaur.github.io/googlehome_replica/"
+                        target="_blank"
+                        class="btn btn-outline-secondary btn-sm"
+                      >
+                        GOOGLE REPLICA
+                      </a>
+                      <a
+                        href="https://marcaur.github.io/ye_page-unofficial-/"
+                        target="_blank"
+                        class="btn btn-outline-secondary btn-sm"
+                      >
+                        KANYE FAN PAGE
+                      </a>
+                      <a
+                        href="https://marcaur.github.io/login_page/"
+                        target="_blank"
+                        class="btn btn-outline-secondary btn-sm"
+                      >
+                        MATRIX PORTAL
+                      </a>
+                      <a
+                        href="https://marcaur.github.io/customer_info_form/"
+                        target="_blank"
+                        class="btn btn-outline-secondary btn-sm"
+                      >
+                        CUSTOMER REG
+                      </a>
+                    </p>
+              <!--    </div> -->
+            <!-- </div> -->
+              </li>
+            </ul>
+          </div>
+        </div> <!--end of second row -->
+
+
+
+
+
+
+      </div>
+    </main>
+          <!--end of 1st row
           <div class="row">
             <div class="col-sm-4 d-flex">
               <div class="card flex-fill">
@@ -120,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <!--end of first column-->
+            end of first column
             <div class="col-sm-4 d-flex">
               <div class="card flex-fill">
                 <h5 class="card-header">
@@ -157,7 +320,7 @@
                 </div>
               </div>
             </div>
-            <!--end of second column-->
+            end of second column
             <div class="col-sm-4 d-flex">
               <div class="card flex-fill">
                 <h5 class="card-header">
@@ -215,12 +378,9 @@
                 </div>
               </div>
             </div>
-            <!--end of third column-->
-          </div>
-          <!--end of second row-->
-        </div>
-      </div>
-      <!--end of pic-->
+            end of third column-->
+
+
     </div>
     <!--end of body container-->
 
@@ -230,7 +390,7 @@
             <br>
             <div class="container">
               <div class="card-deck">
-                
+
                 <div class="col-mb-4">
                     <div class="card" style="width: 18rem;">
                       <svg class="bi bi-file-code card-img-top img-thumbnail" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -269,7 +429,7 @@
               </div>
             </div> END OF FIRST MAIN SECTION ROW
             </div>
-        
+
     </div> End of outside container-->
   </body>
 </html>
